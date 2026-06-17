@@ -1,2 +1,2 @@
-let element = document.querySelector("p");
-console.log(element);
+let para = document.querySelector("p");
+
