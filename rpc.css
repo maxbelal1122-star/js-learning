@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  background-color: rgb(18, 18, 55);
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;   /* circles ke beech ka gap */
+  margin-top: 5rem;
+}
+.choice {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: black;
+  transform: scale(1.05);
+}
+
+.choice img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Rock aur Scissors ke liye */
+#rock img,
+#scissors img {
+  transform: scale(1.15);
+}
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.score p:first-child {
+  font-size: 2rem;
+}
+
+.score p:last-child {
+  font-size: 1.3rem;
+}
+
+.msg-container {
+  margin-top: 2rem;
+}
+
+#msg {
+  background-color: rgb(18, 18, 55);
+  color: white;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
